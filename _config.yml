@@ -1,0 +1,34 @@
+# Site settings
+title: GDG VIT VELLORE PROJECT IDEAS
+email: gdgvitvellore@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+ Google Developers Groups was established in VIT on 28th July 2014 and since then 3 successful events were conducted . 
+ The group now has 60 Developers ,This groups’s agenda is to introduce new technologies to the students, develop new ideas and polish skills in every possible field including management our faculty coordinator is Prof .P Senthilnathan and has guided us along this journey.
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://gdgvitvellore.com" # the base hostname & protocol for your site
+twitter_username: gdgvitvellore
+github_username:  GDGVIT
+google_play: '9033840087167154769'
+google_plus_com: '101018908043689071742'  # Community link
+google_plus_per: '+gdgvitvellore'  #Personal link
+
+# Layout settings
+header_type: default  # values [ drawer, default ]
+post_type: highlight    # values [ highlight, default ]
+pagination_type: default  # values [ ops, default ]
+
+more_vert:
+  option1:
+    name: GDG Website
+    link: www.gdgvitvellore.com
+  option2:
+    name: Submit a project idea
+    link: /project/idea
+
+
+disqus: true
+disqus_shortname: 'gdgvitvellore'
+
+# Build settings
+markdown: kramdown
