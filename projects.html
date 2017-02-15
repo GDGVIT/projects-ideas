@@ -28,7 +28,7 @@
 
     <div class="row">
 
-    <form class="col s12" method="POST" action="https://api.staticman.net/v2/entry/GDGVIT/projects/gh-pages/">
+    <form class="col s12" method="POST" action="https://api.staticman.net/v2/entry/GDGVIT/projects/gh-pages/posts">
       <input type="hidden" name="fields[image]" value="http://devstickers.com/assets/img/pro/func.png">
       <input type="hidden" name="fields[highlight]" value="true">
       <input type="hidden" name="fields[layout]" value="post">
@@ -51,7 +51,8 @@
           <label for="first_name">Category</label>
         </div>
       </div>
-    </form>
+      <a class="waves-effect waves-light btn" onclick="$(this).closest('form').submit()">Sumbit Project Idea</a>
+      </form>
   </div>
   </div>
       <!--Import jQuery before materialize.js-->
