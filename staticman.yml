@@ -1,0 +1,10 @@
+  
+posts:
+  allowedFields: ['title', 'image', 'highlight', 'layout', 'date', 'content', 'categories']
+  branch: gh-pages
+  commitMessage: "Project idea submit"
+  fileName: entry{timestamp}
+  format: mark
+  moderation: true
+  path: _posts
+  allowedOrigins: ["localhost", "eduardoboucas.com"]
