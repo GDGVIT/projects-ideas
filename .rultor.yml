@@ -7,5 +7,26 @@ deploy:
     - "mvn clean site-deploy -Psite -Prempl --settings ../settings.xml"
 merge:
   script: mvn clean install
+assets:
+  rubygems.yml: zerocracy/home#assets/rubygems.yml
+release:
+  script: |-
+    sudo bundle install
+    rake
+    rm -rf *.gem
+    sed -i "s/1\.0\.snapshot/${tag}/g" jekyll-bits.gemspec
+    git add jekyll-bits.gemspec
+    git commit -m "version set to ${tag}"
+    gem build jekyll-bits.gemspec
+    chmod 0600 ../rubygems.yml
+    gem push *.gem --config-file ../rubygems.yml
+  commanders:
+  - yegor256
+architect:
+- yegor256
+merge:
+  commanders: []
+deploy: {}
+merge:
   squash: true
   fast-forward: only
