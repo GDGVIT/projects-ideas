@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-###### GDG VIT Vellore is a non-profit developers group to develop, learn and share
+###### GDG VIT Vellore is a non-profit developers group to develop, learn and share.
  Google Developer Group- VIT is an open community chapter where like minded students come together to discuss, plan and implement projects. The community has developed a wide range of projects including utility based android applications that help the students track their day-to-day activities at VIT. We have developed web-based applications to help students plan out their time tables. Social-welfare projects during times of crises have been developed to help the community and further bring about a change
 
 ##### Ongoing/Completed projects
