@@ -1,0 +1,175 @@
+---
+permalink: '/job-form/'
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Use this form to publish a job in Open Source Design">
+
+    <title>Submit an idea to GDG - VIT</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/jobs/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link href="/jobs/css/custom.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="row col-md-9">
+
+        <h1>Submit an idea to GDG - VIT Organization.</h1>
+        <p class="lead">Give your project proposals and let the community know about the things you are working on.</p>
+        <p class="lead"><a href="http://opensourcedesign.net/code-of-conduct/">We have a code of conduct</a>. Consider reading it before submitting project.</p>
+        <form method="POST" action="https://api.staticman.net/v2/entry/GDGVIT/projects/gh-pages/posts">
+          <input name="options[redirect]" type="hidden" value="http://opensourcedesign.net/jobs/thank-you/">
+          <input name="fields[status]" type="hidden" value="Ongoing">
+          <input name="fields[date_posted]" type="hidden">
+          <input name="fields[layout]" type="hidden" value="jobs">
+          <input name="options[slug]" type="hidden" id="slug" value="">
+          <!--div class="form-group">
+            <label for="role">Role</label>
+            <p class="help-block">The type of designer you are looking for. You could use one of these: graphic designer, icon designer, interaction designer, information architect, user researcher, content strategist, accessibility expert.</p>
+            <input type="text" class="form-control" id="role" placeholder="E.g. Graphic designer" required>
+          </div-->
+          <fieldset>
+            <legend>About you</legend>
+            <div class="form-group">
+              <label for="organization">Organisation</label>
+              <p class="help-block">The name of your organisation or project.</p>
+              <input type="text"
+                class="form-control"
+                id="organization"
+                placeholder="E.g. GDG - VIT Vellore"
+                name="fields[organization]"
+                required>
+            </div>
+            <div class="form-group">
+              <label for="org_url">Organisation's URL</label>
+              <p class="help-block">A link to the organisation you entered above.</p>
+              <input type="url"
+                class="form-control"
+                id="org_url"
+                placeholder="E.g. http://gdgvitvellore.com/"
+                name="fields[org_url]"
+                required>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>About the project idea</legend>
+            <div class="form-group">
+              <label for="title">Project Title</label>
+              <p class="help-block">This will be the main heading in your idea's page. Make it specific, but not too long. You could include name of your project.</p>
+              <input type="text"
+                class="form-control"
+                id="title"
+                placeholder="E.g. Self Driving Car @ GDG - VIT"
+                name="fields[title]"
+                required>
+            </div>
+
+            <div class="form-group">
+              <label for="description">Project description</label>
+              <p class="help-block">Include a brief introduction to your project, and explain the work has to be procedded.</p>
+              <textarea class="form-control"
+                id="description"
+                rows="5"
+                name="fields[description]"
+                required></textarea>
+              <small>Markdown is okay</small>
+            </div>
+
+            <div class="form-group">
+              <label for="links">
+                Relevant links
+                <small>(optional)</small>
+              </label>
+              <p class="help-block">Things like source code repositories, existing design work, project wiki or blog, etc.</p>
+              <textarea class="form-control"
+                id="links"
+                rows="5"
+                name="fields[how_to_apply]"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="tags">
+                Tags
+                <small>(optional)</small>
+              </label>
+              <p class="help-block">Keywords relevant to the idea. Separate tags with commas.</p>
+              <textarea class="form-control"
+                id="tags"
+                rows="2"
+                placeholder="E.g. web, python, machine learning, angular"
+                name="fields[tags]"></textarea>
+            </div>
+          </fieldset>
+          <button type="submit" href="thankyou.html" class="btn btn-primary btn-lg">Submit your idea to GDG - VIT Vellore.</button>
+        </form>
+
+      </div>
+    </div>
+
+    <script src="/jobs/js/jquery.min.js"></script>
+    <script src="/jobs/js/bootstrap.min.js"></script>
+
+    <script>
+
+        function compensation() {
+          if ( $("#gratis").is(":checked") ) {
+            $("#paid_details").parent().slideUp();
+          }
+          else {
+            $("#paid_details").parent().slideDown();
+          }
+        }
+
+        function slug (str) {
+          str = str.replace(/^\s+|\s+$/g, ''); // trim
+          str = str.toLowerCase();
+
+          // remove accents, swap ñ for n, etc
+          var from = "ãàáäâẽèéëêìíïîõòóöôùúüûñç·/_,:;";
+          var to   = "aaaaaeeeeeiiiiooooouuuunc------";
+          for (var i=0, l=from.length ; i<l ; i++) {
+            str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
+          }
+
+          str = str.replace(/[^a-z0-9 -]/g, '') // remove invalid chars
+            .replace(/\s+/g, '-') // collapse whitespace and replace by -
+            .replace(/-+/g, '-'); // collapse dashes
+
+          return str;
+        }
+
+        $(document).ready(function() {
+
+          $('input#title').keyup(function (e) {
+            $('input#slug').val(slug(e.target.value));
+          });
+
+          compensation();
+
+          $("input:radio").click(function(){
+            compensation();
+          });
+
+          var date = new Date();
+          var day = ("0" + date.getDate()).slice(-2);
+          var month = ("0"+(date.getMonth()+1)).slice(-2);
+          var year = date.getFullYear();
+
+          var datestring = year + "-" + month + "-" + day;
+
+          $('[name="fields[date_posted]"]').val(datestring);
+
+      });
+    </script>
+  </body>
+
+</html>
