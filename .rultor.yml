@@ -1,3 +1,10 @@
-merge:
-  fast-forward: only
-  script: echo "Nothing to do."
+deploy:
+  env:
+    MAVEN_OPTS: "-XX:MaxPermSize=256m -Xmx1g"
+  script:
+    - "sudo bundle"
+    - "mvn clean deploy -Prultor --settings ../settings.xml"
+    - "mvn clean site-deploy -Psite -Prempl --settings ../settings.xml"
+  merge:
+    fast-forward: only
+    script: echo "Nothing to do."
