@@ -13,7 +13,7 @@ title: Jobs
   <hr>
   <ul class="job-list">
     {% for page in site.pages reversed %}
-        {% if page.layout == 'jobs' and page.status == 'searching' %}
+        {% if page.layout == 'jobs' %}
           {% unless page.title contains 'Job Title' %}{% comment %} Filter out the example page {% endcomment %}
           <li>
             <h2>
