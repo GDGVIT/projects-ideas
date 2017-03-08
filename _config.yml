@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
  Google Developers Groups was established in VIT on 28th July 2014 and since then 3 successful events were conducted .
  The group now has 60 Developers ,This groups’s agenda is to introduce new technologies to the students, develop new ideas and polish skills in every possible field including management our faculty coordinator is Prof .P Senthilnathan and has guided us along this journey.
 
-baseurl: "/projects" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://gdgvitvellore.com/" # the base hostname & protocol for your site
 twitter_username: gdgvitvellore
 github_username:  gdgvit
