@@ -7,3 +7,4 @@ deploy:
     - "mvn clean site-deploy -Psite -Prempl --settings ../settings.xml"
   merge:
     fast-forward: only
+    script: echo "Nothing to do."
