@@ -9,4 +9,4 @@ title: My VIT - iOS APp
 tags: ios
 date: '2017-03-10T17:06:17.633Z'
 ---
-An iOS app for VTOP using go-MyVIT api made my shubhodeep9
+An iOS app for VTOP using go-MyVIT api made by shubhodeep9
