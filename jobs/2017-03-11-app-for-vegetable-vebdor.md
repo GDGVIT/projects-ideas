@@ -5,7 +5,7 @@ date_posted: '2017-03-11'
 layout: jobs
 organization: GDG VIT Vellore
 org_url: 'http://gdg.vitvellore.com'
-title: App for vegetable vebdor
+title: App for vegetable vendor
 tags: ''
 date: '2017-03-11T06:56:44.497Z'
 ---
