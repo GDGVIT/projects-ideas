@@ -9,5 +9,5 @@ A jekyll based website showcasing GDG - VIT Vellore's project ideas. Plus anyone
 <li>Fully automated - Post the idea - merge it - it direcly gets published to gh-pages.</li>
 </ul>
 
-## Contributors
+## Developers
 <a href="https://github.com/aalind0">Aalind Singh</a><br />
