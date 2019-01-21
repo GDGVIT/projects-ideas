@@ -4,7 +4,7 @@ status: Ongoing
 date_posted: '2017-03-10'
 layout: jobs
 organization: GDG - VIT Vellore
-org_url: 'http://gdgvitvellore.com'
+org_url: 'http://dscvit.com'
 title: My VIT - iOS APp
 tags: ios
 date: '2017-03-10T17:06:17.633Z'

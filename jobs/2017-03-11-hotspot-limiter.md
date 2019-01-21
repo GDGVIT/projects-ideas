@@ -4,7 +4,7 @@ status: Ongoing
 date_posted: '2017-03-11'
 layout: jobs
 organization: GDG - VIT Vellore
-org_url: 'http://gdgvitvellore.com'
+org_url: 'http://dscvit.com'
 title: hotspot limiter
 tags: ''
 date: '2017-03-11T08:13:19.707Z'

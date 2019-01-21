@@ -4,7 +4,7 @@ status: Ongoing
 date_posted: '2017-03-13'
 layout: jobs
 organization: RamKishore
-org_url: 'http://gdgvitvellore.com'
+org_url: 'http://dscvit.com'
 title: ScrapDroid
 tags: 'scraping,android,web-scraping,library'
 date: '2017-03-12T21:57:49.672Z'

@@ -4,7 +4,7 @@ status: Ongoing
 date_posted: '2017-03-24'
 layout: jobs
 organization: Rishi Raj @GDGVIT
-org_url: gdgvitvellore.com
+org_url: dscvit.com
 title: AMP Pages for GDG Blog
 tags: 'blog, amp, web'
 timestamp: 1490294099

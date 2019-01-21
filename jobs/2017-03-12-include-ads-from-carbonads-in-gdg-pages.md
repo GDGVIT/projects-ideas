@@ -4,7 +4,7 @@ status: Ongoing
 date_posted: '2017-03-12'
 layout: jobs
 organization: Rahul Krishna @ GDG-VIT
-org_url: 'http://gdgvitvellore.com'
+org_url: 'http://dscvit.com'
 title: Include Ads from CarbonAds in GDG pages.
 tags: 'websites, advertisements'
 date: '2017-03-12T16:49:37.941Z'

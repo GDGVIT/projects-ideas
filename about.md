@@ -17,4 +17,4 @@ In order to maintain an all rounded community, teams of students from GDG-VIT ha
 
 You can have a look at our Inner Circle members [here](https://github.com/orgs/GDGVIT/people)
 
-Copyright © 2017 [Google Developers Group VIT VELLORE](http://www.gdgvitvellore.com)
+Copyright © 2017 [Google Developers Group VIT VELLORE](http://www.dscvit.com)
